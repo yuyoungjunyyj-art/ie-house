@@ -592,11 +592,12 @@ h1 {
 /* House of Tea home */
 .tea-hero {
   display: grid;
-  gap: 2rem;
-  padding: clamp(2.5rem, 6vh, 4rem) var(--gutter) clamp(1.75rem, 4vh, 3rem);
+  gap: 2.5rem;
+  padding: clamp(3rem, 7vh, 4.5rem) var(--gutter) clamp(2.75rem, 6vh, 4.5rem);
 }
 
 .tea-hero h1 {
+  font-size: clamp(2.5rem, 9vw, 5rem);
   letter-spacing: 0.04em;
 }
 
@@ -606,23 +607,23 @@ h1 {
 
 .tea-hero__line {
   margin-top: 1.5rem;
-  font: 300 clamp(1.5rem, 3.4vw, 2.125rem) / 1.4 var(--display);
+  font: 300 clamp(1.25rem, 2.6vw, 1.75rem) / 1.4 var(--display);
 }
 
 .screen {
   display: grid;
   align-content: center;
-  gap: 1.75rem;
-  padding: clamp(1.75rem, 4vh, 3rem) var(--gutter);
+  gap: 2.25rem;
+  padding: clamp(2.75rem, 6vh, 4.5rem) var(--gutter);
 }
 
 .screen__text {
   max-width: 24em;
-  font: 300 clamp(1.625rem, 4vw, 2.75rem) / 1.35 var(--display);
+  font: 300 clamp(1.3125rem, 2.8vw, 2.125rem) / 1.4 var(--display);
 }
 
 .screen__text .line + .line {
-  margin-top: 0.6em;
+  margin-top: 0.7em;
 }
 
 .screen__shots {
@@ -639,8 +640,8 @@ h1 {
 }
 
 .screen--close .screen__text {
-  font-size: clamp(2.25rem, 6vw, 4.5rem);
-  line-height: 1.2;
+  font-size: clamp(1.75rem, 4.2vw, 3.25rem);
+  line-height: 1.25;
 }
 
 .tea-buttons {
