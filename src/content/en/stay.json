@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Ie Stays · A place to stay in Fushimi, Kyoto",
-    "description": "Stay in the house in Fushimi. Our Ie Stays pages are being prepared. Enquire about a stay."
+    "title": "IE Stays · A place to stay in Fushimi, Kyoto",
+    "description": "Stay in the house in Fushimi. Our IE Stays pages are being prepared. Enquire about a stay."
   },
-  "label": "Ie Stays · 泊まる家",
-  "title": "Ie Stays",
-  "line": "Stay in the house in Fushimi. Our Ie Stays pages are being prepared.",
+  "label": "IE Stays · 泊まる家",
+  "title": "IE Stays",
+  "line": "Stay in the house in Fushimi. Our IE Stays pages are being prepared.",
   "shot": "stay-room",
   "buttons": [
     { "label": "Enquire about a stay", "href": "/tea/visit?interest=stay#enquire" },
-    { "label": "Visit the House of Tea", "href": "/tea" }
+    { "label": "Visit the IE House of Tea", "href": "/tea" }
   ]
 }

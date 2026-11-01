@@ -9,19 +9,19 @@
   ],
   "doors": [
     {
-      "title": "Ie Stays",
+      "title": "IE Stays",
       "shot": "door-house",
       "japanese": "泊まる家",
-      "line": "Sleep in the house after the visitors have gone. Mornings by the well and the garden.",
-      "link": "Enter",
+      "line": "Stay in thoughtfully restored Japanese houses, where heritage meets contemporary comfort. Discover the rhythms of everyday Kyoto, beyond the familiar tourist trails.",
+      "link": "Explore Our Stays",
       "href": "/stay"
     },
     {
-      "title": "House of Tea",
+      "title": "IE House of Tea",
       "shot": "door-tea",
       "japanese": "茶の家",
-      "line": "Tea prepared, food shared, a garden that turns with the seasons. Open to visitors.",
-      "link": "Enter",
+      "line": "A house devoted to tea, seasonal flavours and the quiet rituals of everyday Kyoto. Discover thoughtfully prepared teas, food and moments of connection in a traditional machiya in Fushimi.",
+      "link": "Explore the House",
       "href": "/tea"
     }
   ]

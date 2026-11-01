@@ -6,7 +6,7 @@ const read = (path) => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
 
 const pages = [
   ['ie.house · Brand home (/)', 'en/brand.json'],
-  ['House of Tea · Home (/tea)', 'en/tea-home.json'],
+  ['IE House of Tea · Home (/tea)', 'en/tea-home.json'],
   ['The House (/tea/house)', 'en/house.json'],
   ['Tea (/tea/tea)', 'en/tea.json'],
   ['Tea list', 'en/data/menu.json'],
@@ -17,7 +17,7 @@ const pages = [
   ['Twenty-four seasons', 'en/data/seasons.json'],
   ['Journal', 'en/data/journal.json'],
   ['Plan Your Visit (/tea/visit)', 'en/visit.json'],
-  ['Ie Stays holding page (/stay)', 'en/stay.json'],
+  ['IE Stays holding page (/stay)', 'en/stay.json'],
   ['Header, footer, forms, 404', 'en/site.json'],
   ['House details', 'settings.json'],
 ];

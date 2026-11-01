@@ -1,13 +1,13 @@
 {
   "wordmark": {
     "brand": "ie.house",
-    "tea": "House of Tea"
+    "tea": "IE House of Tea"
   },
   "nav": {
     "skip": "Skip to content",
     "brand": [
-      { "label": "Ie Stays", "href": "/stay" },
-      { "label": "House of Tea", "href": "/tea" }
+      { "label": "IE Stays", "href": "/stay" },
+      { "label": "IE House of Tea", "href": "/tea" }
     ],
     "tea": [
       { "label": "The House", "href": "/tea/house" },
@@ -29,7 +29,7 @@
       "error": "That did not go through. Please try again.",
       "unconnected": "Seasonal letters are not open yet. Please check back soon."
     },
-    "houseHeading": "House of Tea",
+    "houseHeading": "IE House of Tea",
     "visitHeading": "Visit",
     "followHeading": "Follow",
     "copyright": "© Ie · ie.house",

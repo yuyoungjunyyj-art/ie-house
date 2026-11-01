@@ -11,16 +11,16 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
 - **lines**
   - IE (家) means home — a place of belonging, comfort, and everyday life.
 - **doors**
-  - **title:** Ie Stays
+  - **title:** IE Stays
   - **japanese:** 泊まる家
-  - **line:** Sleep in the house after the visitors have gone. Mornings by the well and the garden.
-  - **link:** Enter
-  - **title:** House of Tea
+  - **line:** Stay in thoughtfully restored Japanese houses, where heritage meets contemporary comfort. Discover the rhythms of everyday Kyoto, beyond the familiar tourist trails.
+  - **link:** Explore Our Stays
+  - **title:** IE House of Tea
   - **japanese:** 茶の家
-  - **line:** Tea prepared, food shared, a garden that turns with the seasons. Open to visitors.
-  - **link:** Enter
+  - **line:** A house devoted to tea, seasonal flavours and the quiet rituals of everyday Kyoto. Discover thoughtfully prepared teas, food and moments of connection in a traditional machiya in Fushimi.
+  - **link:** Explore the House
 
-## House of Tea · Home (/tea)
+## IE House of Tea · Home (/tea)
 
 - **meta**
   - **title:** Ie Fushimi · A House of Tea in Kyoto
@@ -56,7 +56,7 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
   - **line:** Made in the kitchen, shared at the table.
   - **mark:** 泊
   - **title:** Stay
-  - **line:** Spend the night at Ie Stays.
+  - **line:** Spend the night at IE Stays.
 
 ## The House (/tea/house)
 
@@ -322,28 +322,28 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
   - **question:** Which languages do you speak?
   - **answer:** We can assist you in English, Japanese, Chinese, and Korean.
 
-## Ie Stays holding page (/stay)
+## IE Stays holding page (/stay)
 
 - **meta**
-  - **title:** Ie Stays · A place to stay in Fushimi, Kyoto
-  - **description:** Stay in the house in Fushimi. Our Ie Stays pages are being prepared. Enquire about a stay.
-- **label:** Ie Stays · 泊まる家
-- **title:** Ie Stays
-- **line:** Stay in the house in Fushimi. Our Ie Stays pages are being prepared.
+  - **title:** IE Stays · A place to stay in Fushimi, Kyoto
+  - **description:** Stay in the house in Fushimi. Our IE Stays pages are being prepared. Enquire about a stay.
+- **label:** IE Stays · 泊まる家
+- **title:** IE Stays
+- **line:** Stay in the house in Fushimi. Our IE Stays pages are being prepared.
 - **buttons**
   - **label:** Enquire about a stay
-  - **label:** Visit the House of Tea
+  - **label:** Visit the IE House of Tea
 
 ## Header, footer, forms, 404
 
 - **wordmark**
   - **brand:** ie.house
-  - **tea:** House of Tea
+  - **tea:** IE House of Tea
 - **nav**
   - **skip:** Skip to content
   - **brand**
-    - **label:** Ie Stays
-    - **label:** House of Tea
+    - **label:** IE Stays
+    - **label:** IE House of Tea
   - **tea**
     - **label:** The House
     - **label:** Tea
@@ -361,7 +361,7 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
     - **success:** Thank you. The next letter will find you.
     - **error:** That did not go through. Please try again.
     - **unconnected:** Seasonal letters are not open yet. Please check back soon.
-  - **houseHeading:** House of Tea
+  - **houseHeading:** IE House of Tea
   - **visitHeading:** Visit
   - **followHeading:** Follow
   - **copyright:** © Ie · ie.house
@@ -412,10 +412,10 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
 - **email:** [Contact email to confirm]
 - **phone:** [Phone to confirm]
 - **social**
-  - **name:** Ie Stays
+  - **name:** IE Stays
   - **facebookUrl:** https://www.facebook.com/profile.php?id=61595825039967
   - **instagramUrl:** https://www.instagram.com/iehousejapan
-  - **name:** House of Tea
+  - **name:** IE House of Tea
   - **facebookUrl:** https://www.facebook.com/profile.php?id=61594855632378
   - **instagramUrl:** https://www.instagram.com/iehouseoftea/
 
