@@ -1,0 +1,34 @@
+---
+import InnerPage from '../../../layouts/InnerPage.astro';
+import { content, localePaths } from '../../../lib/i18n';
+import { seasonIndex, startDate } from '../../../lib/seasons';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const { seasons, data } = content(locale);
+const list = data.seasons.items;
+const current = seasonIndex(list);
+---
+<InnerPage locale={locale} page={seasons} path="/tea/seasons">
+  <ol class="season-grid" slot="calendar" data-season-grid data-seasons={JSON.stringify(list)} style="list-style: none; padding: 0; margin: 0;">
+    {list.map((season: any, i: number) => (
+      <li class:list={['season-cell', { 'is-now': i === current }]} data-season-cell aria-current={i === current ? 'date' : undefined}>
+        <span class="season-cell__now">{seasons.now}</span>
+        <span class="season-cell__kanji" lang="ja">{season.kanji}</span>
+        <span class="season-cell__romaji">{season.romaji}</span>
+        <span class="season-cell__name">{season.name}</span>
+        <span class="season-cell__date">{startDate(season, locale)}</span>
+        {season.note && <span class="season-cell__note">{season.note}</span>}
+      </li>
+    ))}
+  </ol>
+  <div class="journal" slot="journal">
+    {data.journal.items.map((post: any) => (
+      <article>
+        <time datetime={post.date}>{post.date}</time>
+        <h3>{post.title}</h3>
+        <p>{post.body}</p>
+      </article>
+    ))}
+  </div>
+</InnerPage>

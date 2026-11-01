@@ -1,0 +1,19 @@
+---
+import InnerPage from '../../../layouts/InnerPage.astro';
+import { content, localePaths } from '../../../lib/i18n';
+import { rich } from '../../../lib/rich';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const { food, data } = content(locale);
+---
+<InnerPage locale={locale} page={food} path="/tea/food">
+  <ul class="rows" slot="season">
+    {data.dishes.items.map((dish: any) => (
+      <li class="row">
+        <p class="row__name" set:html={rich(dish.name)} />
+        <p class="row__text" set:html={rich(dish.description)} />
+      </li>
+    ))}
+  </ul>
+</InnerPage>

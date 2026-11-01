@@ -1,0 +1,143 @@
+backend:
+  name: github
+  repo: yuyoungjunyyj-art/ie-house
+  branch: main
+
+# Lets `npm run cms` edit local files without signing in.
+local_backend: true
+
+media_folder: src/assets/photos
+public_folder: /src/assets/photos
+
+collections:
+  - name: tea
+    label: Tea menu
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: menu
+        label: Tea list
+        file: src/content/en/data/menu.json
+        fields:
+          - label: Teas
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Japanese, name: japanese, widget: string, required: false }
+              - { label: Description, name: description, widget: text }
+  - name: food
+    label: Food
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: dishes
+        label: This season's dishes
+        file: src/content/en/data/dishes.json
+        fields:
+          - label: Dishes
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text, required: false }
+  - name: gatherings
+    label: Gatherings
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: events
+        label: Upcoming events
+        file: src/content/en/data/events.json
+        fields:
+          - label: Events
+            name: items
+            widget: list
+            required: false
+            summary: "{{fields.date}} {{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Date, name: date, widget: string, hint: "As you want it shown, for example 7 November" }
+              - { label: Description, name: description, widget: text, required: false }
+  - name: seasons
+    label: Seasons
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: seasons
+        label: Seasonal notes
+        file: src/content/en/data/seasons.json
+        fields:
+          - label: Seasons
+            name: items
+            widget: list
+            allow_add: false
+            summary: "{{fields.kanji}} {{fields.romaji}}"
+            fields:
+              - { label: Id, name: id, widget: hidden }
+              - { label: Kanji, name: kanji, widget: hidden }
+              - { label: Romaji, name: romaji, widget: hidden }
+              - { label: Name, name: name, widget: string }
+              - { label: Start month, name: month, widget: number, value_type: int, min: 1, max: 12 }
+              - { label: Start day, name: day, widget: number, value_type: int, min: 1, max: 31 }
+              - { label: Short note, name: note, widget: text, required: false }
+      - name: journal
+        label: Journal
+        file: src/content/en/data/journal.json
+        fields:
+          - label: Posts
+            name: items
+            widget: list
+            summary: "{{fields.date}} {{fields.title}}"
+            fields:
+              - { label: Date, name: date, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD }
+              - { label: Title, name: title, widget: string }
+              - { label: Note, name: body, widget: text }
+  - name: photos
+    label: Photographs
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: images
+        label: Image slots
+        file: src/content/images.json
+        fields:
+          - label: Slots
+            name: items
+            widget: list
+            allow_add: false
+            summary: "{{fields.shot}}"
+            fields:
+              - { label: Id, name: id, widget: hidden }
+              - { label: Ratio, name: ratio, widget: hidden }
+              - { label: Shot, name: shot, widget: string }
+              - { label: Photograph or video poster, name: src, widget: image, required: false }
+              - { label: Video path, name: video, widget: string, required: false, hint: "A file in public/videos, for example /videos/water.mp4. Leave empty for a photograph." }
+              - { label: Alt text, name: alt, widget: string, required: false, hint: "Describe the photograph for people who cannot see it" }
+  - name: settings
+    label: House details
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: settings
+        label: Address, hours and links
+        file: src/content/settings.json
+        fields:
+          - { label: Street address, name: address, widget: string }
+          - { label: Access, name: access, widget: text }
+          - { label: Hours, name: hours, widget: string }
+          - { label: Closed days, name: closed, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Map link, name: mapUrl, widget: string, required: false }
+          - label: Social accounts
+            name: social
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Facebook link, name: facebookUrl, widget: string }
+              - { label: Instagram link, name: instagramUrl, widget: string }
+          - { label: Booking link, name: bookingUrl, widget: string, required: false, hint: "When set, Reserve goes here instead of the enquiry form" }

@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Seasons · Ie Fushimi",
+    "description": "The old calendar divides the year into twenty-four seasons. The house follows them. See where the year stands today."
+  },
+  "mark": "季",
+  "label": "Seasons",
+  "title": "Seasons",
+  "intro": "The old calendar divides the year into twenty-four seasons. The house follows them.",
+  "sections": [
+    {
+      "id": "calendar",
+      "heading": "二十四節気",
+      "body": ["Each season lasts about fifteen days. Its name says what to look for: frost, rain, the first heat. Dates are approximate and shift by a day from year to year."],
+      "shots": []
+    },
+    {
+      "id": "journal",
+      "heading": "Journal",
+      "body": ["Notes from the house as the seasons turn."],
+      "shots": ["seasons-moss"]
+    }
+  ],
+  "now": "Now",
+  "links": [
+    { "label": "The House", "href": "/tea/house" },
+    { "label": "Plan Your Visit", "href": "/tea/visit" }
+  ]
+}

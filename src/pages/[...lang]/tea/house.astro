@@ -1,0 +1,8 @@
+---
+import InnerPage from '../../../layouts/InnerPage.astro';
+import { content, localePaths } from '../../../lib/i18n';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+---
+<InnerPage locale={locale} page={content(locale).house} path="/tea/house" />

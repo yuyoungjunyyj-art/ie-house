@@ -1,0 +1,27 @@
+---
+import { content, href } from '../lib/i18n';
+import { currentAndNext, seasonTitle, startDate } from '../lib/seasons';
+
+const { locale } = Astro.props;
+const { site, data } = content(locale);
+const seasons = data.seasons.items;
+const { current, next } = currentAndNext(seasons);
+---
+<section
+  class="season-strip"
+  data-season-strip
+  data-locale={locale}
+  data-from={site.season.from}
+  data-seasons={JSON.stringify(seasons)}
+>
+  <p class="eyebrow">{site.season.label}</p>
+  <p class="season-strip__now">
+    <span class="jp" lang="ja" data-season-kanji>{current.kanji}</span>
+    <span data-season-title>{seasonTitle(current)}</span>
+  </p>
+  <p class="season-strip__note" data-season-note hidden={!current.note}>{current.note}</p>
+  <p class="season-strip__next">
+    {site.season.next}: <span data-season-next>{next.kanji} {seasonTitle(next)}, {site.season.from} {startDate(next, locale)}</span>
+  </p>
+  <a class="link" href={href(locale, '/tea/seasons')}>{site.season.link}</a>
+</section>

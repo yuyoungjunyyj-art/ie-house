@@ -1,0 +1,29 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import { shotFor } from '../lib/photos';
+
+const { id, sizes = '(min-width: 900px) 50vw, 100vw', eager = false, ratio } = Astro.props;
+const shot = shotFor(id);
+const aspect = ratio ?? shot.ratio;
+const poster = shot.video && shot.photo ? (await getImage({ src: shot.photo, width: 1280, format: 'webp' })).src : undefined;
+---
+{shot.video ? (
+  <figure class="shot-video" data-video>
+    <video class="shot" style={`aspect-ratio: ${aspect}`} src={shot.video} poster={poster} aria-label={shot.alt} muted loop playsinline preload="none"></video>
+  </figure>
+) : shot.photo ? (
+  <Picture
+    src={shot.photo}
+    alt={shot.alt}
+    formats={['avif', 'webp']}
+    widths={[480, 800, 1200, 1800].filter((w) => w <= shot.photo!.width)}
+    sizes={sizes}
+    loading={eager ? 'eager' : 'lazy'}
+    class="shot"
+    style={`aspect-ratio: ${aspect}`}
+  />
+) : (
+  <div class="shot shot--empty" style={`aspect-ratio: ${aspect}`} role="img" aria-label={`Photograph to come: ${shot.shot}`}>
+    <span>{shot.shot}</span>
+  </div>
+)}

@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import TextLink from '../components/TextLink.astro';
+import { content, defaultLocale, href } from '../lib/i18n';
+
+const locale = defaultLocale;
+const { notFound } = content(locale).site;
+---
+<Base locale={locale} area="brand" meta={notFound.meta} path="/" noindex>
+  <section class="not-found">
+    <h1>{notFound.title}</h1>
+    <p>{notFound.body}</p>
+    <TextLink href={href(locale, '/')} label={notFound.link} />
+  </section>
+</Base>

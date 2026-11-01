@@ -1,0 +1,6 @@
+---
+const { lines, class: className } = Astro.props;
+---
+<p class:list={['lines', className]} data-reveal>
+  {lines.map((line: string, i: number) => <span class="line" style={`--i: ${i}`}>{line}</span>)}
+</p>

@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import Lines from '../../components/Lines.astro';
+import Shot from '../../components/Shot.astro';
+import { content, href, localePaths } from '../../lib/i18n';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const { brand } = content(locale);
+---
+<Base locale={locale} area="brand" meta={brand.meta} path="/">
+  <section class="main-hero">
+    <h1 class="sr-only">{brand.heading}</h1>
+    <Shot id="main-hero" />
+    <Lines class="main-hero__lines" lines={brand.lines} />
+  </section>
+
+  <section class="doors" data-reveal>
+    {brand.doors.map((door: any) => (
+      <a class:list={['door', { 'door--photo': door.shot }]} href={href(locale, door.href)}>
+        {door.shot && <span class="door__photo" data-shot={door.shot}><Shot id={door.shot} /></span>}
+        <p class="door__japanese" lang="ja">{door.japanese}</p>
+        <h2 class="door__title">{door.title}</h2>
+        <p class="door__line">{door.line}</p>
+        <span class="door__enter">{door.link}</span>
+      </a>
+    ))}
+  </section>
+</Base>

@@ -1,0 +1,7 @@
+---
+// The pressed-ink mark from Photo/The Ie Logo.png. The mask lets it take the text colour in either theme.
+import { logoInk, logoRatio } from '../lib/logo-ink';
+
+const { class: className } = Astro.props;
+---
+<span class:list={['mark', className]} style={`aspect-ratio: ${logoRatio}; -webkit-mask-image: url(${logoInk}); mask-image: url(${logoInk});`} aria-hidden="true"></span>

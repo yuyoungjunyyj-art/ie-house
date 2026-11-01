@@ -1,0 +1,70 @@
+---
+import { getImage } from 'astro:assets';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { defaultLocale, href, locales } from '../lib/i18n';
+import { shotFor } from '../lib/photos';
+import { isConfirmed } from '../lib/rich';
+import settings from '../content/settings.json';
+import '../styles/global.css';
+
+const { locale, area, meta, path, ogShot, noindex = false } = Astro.props;
+const canonical = new URL(href(locale, path), Astro.site).href;
+const ogPhoto = ogShot ? shotFor(ogShot).photo : undefined;
+const ogImage = ogPhoto ? (await getImage({ src: ogPhoto, width: 1200, format: 'jpeg' })).src : '/og-default.png';
+
+const business: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Ie Fushimi, House of Tea',
+  url: new URL('/tea/', Astro.site).href,
+  description: 'A House of Tea in Fushimi, Kyoto.',
+  address: {
+    '@type': 'PostalAddress',
+    ...(isConfirmed(settings.address) ? { streetAddress: settings.address } : {}),
+    addressLocality: 'Kyoto',
+    addressRegion: 'Kyoto',
+    addressCountry: 'JP',
+  },
+  ...(isConfirmed(settings.phone) ? { telephone: settings.phone } : {}),
+  ...(isConfirmed(settings.email) ? { email: settings.email } : {}),
+};
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#EFEAE0" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1D1B18" />
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {!noindex && locales.map((code) => <link rel="alternate" hreflang={code} href={new URL(href(code, path), Astro.site).href} />)}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={new URL(href(defaultLocale, path), Astro.site).href} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ie" />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
+    />
+    {area === 'tea' && <script is:inline type="application/ld+json" set:html={JSON.stringify(business)} />}
+    <script is:inline>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <Header locale={locale} area={area} />
+    <main id="main"><slot /></main>
+    <Footer locale={locale} />
+    <script>import '../scripts/site.ts';</script>
+  </body>
+</html>

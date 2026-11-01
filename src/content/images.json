@@ -1,0 +1,31 @@
+{
+  "items": [
+    { "id": "main-hero", "shot": "The house from the street", "ratio": "16/9", "src": "/src/assets/photos/main-hero-poster.jpg", "video": "/videos/main-hero.mp4", "alt": "The dark timber front of the house, with a dotted noren curtain moving in the breeze as a scooter passes." },
+    { "id": "door-house", "shot": "Ie Stay background", "ratio": "3/2", "src": "/src/assets/photos/room-first-light.jpg", "video": "", "alt": "" },
+    { "id": "door-tea", "shot": "House of Tea background", "ratio": "3/2", "src": "/src/assets/photos/sand-hearth.jpg", "video": "", "alt": "" },
+    { "id": "tea-home-hero", "shot": "Still water in a stone basin", "ratio": "3/4", "src": "/src/assets/photos/hero-opening-poster.jpg", "video": "/videos/hero-opening.mp4", "alt": "Still water in a stone basin, reflecting leaves and sky." },
+    { "id": "tea-home-street", "shot": "The house from the street", "ratio": "4/3", "src": "/src/assets/photos/main-gate.jpg", "video": "", "alt": "The front of the house from the street: a tiled roof, timber lattice and a lit room behind glass." },
+    { "id": "tea-home-timber", "shot": "Tray on the tatami", "ratio": "1/3", "src": "/src/assets/photos/tatami-tray.jpg", "video": "", "alt": "A tray with glass bottles on the tatami of a quiet room." },
+    { "id": "tea-home-well", "shot": "First-floor hallway", "ratio": "1/3", "src": "/src/assets/photos/hallway-decoration.jpg", "video": "", "alt": "Dried grasses and flowers with baskets, standing in the light at the end of a timber hallway." },
+    { "id": "tea-home-garden", "shot": "Long timber room", "ratio": "1/3", "src": "/src/assets/photos/loft-room.jpg", "video": "", "alt": "A long, narrow room under exposed timbers, with a small window at the far end." },
+    { "id": "tea-home-hands", "shot": "Hands preparing tea", "ratio": "16/9", "src": "/src/assets/photos/sand-hearth-poster.jpg", "video": "/videos/sand-hearth.mp4", "alt": "A hand turning a small copper pot set in a hearth of hot sand." },
+    { "id": "house-facade", "shot": "Window grille and timber front", "ratio": "4/5", "src": "/src/assets/photos/window-grille.jpg", "video": "", "alt": "A barred plaster window above dark timber boards on the street front." },
+    { "id": "house-street", "shot": "Looking out to the street", "ratio": "4/5", "src": "/src/assets/photos/look-out-to-street.jpg", "video": "", "alt": "A dim passage with a stool and a bench, looking out through glass doors to the bright street." },
+    { "id": "house-beam", "shot": "Beam detail", "ratio": "4/5", "src": "/src/assets/photos/beams.jpg", "video": "", "alt": "Old roof beams and rafters, with sunlight falling along one beam." },
+    { "id": "house-wall", "shot": "Old wall", "ratio": "4/5", "src": "/src/assets/photos/old-wall-chair.jpg", "video": "", "alt": "Light falling across an old wall above an antique cane chair." },
+    { "id": "house-well", "shot": "Water in the stone basin", "ratio": "16/9", "src": "/src/assets/photos/water-poster.jpg", "video": "/videos/water.mp4", "alt": "Water running through a round, mossy stone set in raked gravel." },
+    { "id": "house-garden", "shot": "Garden from the veranda", "ratio": "4/5", "src": "/src/assets/photos/garden-to-annex.jpg", "video": "", "alt": "Moss, stones and low plants in the garden, seen beside the timber veranda." },
+    { "id": "house-moss", "shot": "Moss and fern", "ratio": "4/5", "src": "/src/assets/photos/moss-fern.jpg", "video": "", "alt": "A young fern growing from a bed of moss." },
+    { "id": "tea-prepare", "shot": "Tea in the glass", "ratio": "424/273", "src": "/src/assets/photos/tea-making-poster.jpg", "video": "/videos/tea-making.mp4", "alt": "Fine bubbles moving along the surface of golden tea, seen close through glass." },
+    { "id": "tea-bottle", "shot": "Tea in a bottle", "ratio": "9/16", "src": "/src/assets/photos/tea-bottle-poster.jpg", "video": "/videos/tea-bottle.mp4", "alt": "Bubbles rising in a tall glass bottle of pale tea with a white stopper." },
+    { "id": "tea-room", "shot": "Light on the shoji", "ratio": "9/16", "src": "/src/assets/photos/shoji-light.jpg", "video": "", "alt": "Sunlight falling through the timber lattice of a paper screen." },
+    { "id": "tea-sitting", "shot": "Tatami room facing the garden", "ratio": "3/2", "src": "/src/assets/photos/tatami-garden.jpg", "video": "", "alt": "A dark tatami room with paper screens, its open doors framing a stone lantern in the garden." },
+    { "id": "food-oven", "shot": "Fire in the oven", "ratio": "16/9", "src": "/src/assets/photos/oven-poster.jpg", "video": "/videos/oven.mp4", "alt": "Logs burning over embers inside an oven." },
+    { "id": "food-sweet", "shot": "Financiers", "ratio": "4/5", "src": "/src/assets/photos/financier.jpg", "video": "", "alt": "Small financiers in a paper cone beside a cup of tea." },
+    { "id": "food-wagashi", "shot": "Sweet and tea", "ratio": "4/5", "src": "/src/assets/photos/wagashi.jpg", "video": "", "alt": "A pale round sweet with a wooden pick on a dark plate, beside a bowl of tea." },
+    { "id": "gatherings-room", "shot": "Long tatami room", "ratio": "3/2", "src": "/src/assets/photos/upper-tatami.jpg", "video": "", "alt": "A long, empty tatami room under a timber ceiling, with light at the far end." },
+    { "id": "seasons-moss", "shot": "Moss", "ratio": "3/2", "src": "/src/assets/photos/moss-stone.jpg", "video": "", "alt": "Bright moss between stones, with leaves blurred in the foreground." },
+    { "id": "visit-cafe", "shot": "First-floor room", "ratio": "3/2", "src": "/src/assets/photos/cafe-area.jpg", "video": "", "alt": "The first-floor room at the street front, with a bonsai on a low platform and timber walls." },
+    { "id": "stay-room", "shot": "Room at first light", "ratio": "3/2", "src": "/src/assets/photos/room-first-light.jpg", "video": "", "alt": "A tatami room with a steep timber stair, lit from a window on one side." }
+  ]
+}

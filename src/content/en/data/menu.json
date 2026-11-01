@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "name": "Matcha", "japanese": "抹茶", "description": "Powdered green tea, whisked in the bowl." },
+    { "name": "Sencha", "japanese": "煎茶", "description": "Steamed green leaf, steeped. Clear and fresh." },
+    { "name": "Gyokuro", "japanese": "玉露", "description": "Leaf grown in shade, steeped slowly in cooler water." },
+    { "name": "Hōjicha", "japanese": "焙じ茶", "description": "Green tea roasted until brown. Warm and quiet." }
+  ]
+}

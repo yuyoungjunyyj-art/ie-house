@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "Tea · Ie Fushimi",
+    "description": "Water from the well, leaves chosen for the season, and time to drink slowly. Tea in an old house in Fushimi, Kyoto."
+  },
+  "mark": "茶",
+  "label": "Tea",
+  "title": "Tea",
+  "intro": "Water from the well, leaves chosen for the season, and time to drink slowly.",
+  "sections": [
+    {
+      "id": "prepare",
+      "heading": "What we prepare",
+      "body": ["Four teas. Each asks for something different from the water and from you.", "[Sources and seasonal list to confirm.]"],
+      "shots": ["tea-prepare"]
+    },
+    {
+      "id": "served",
+      "heading": "How it is served",
+      "body": [
+        "Tea is prepared in front of you.",
+        "We will explain as much or as little as you like. You do not need to know tea ceremony.",
+        "There is no hurry to finish."
+      ],
+      "shots": ["tea-bottle", "tea-room"]
+    },
+    {
+      "id": "sittings",
+      "heading": "Tea sittings",
+      "body": ["A sitting is time set aside for tea in the house.", "[Format, length and times to confirm.]"],
+      "shots": ["tea-sitting"]
+    }
+  ],
+  "reserve": "Reserve",
+  "links": [
+    { "label": "Food", "href": "/tea/food" },
+    { "label": "Plan Your Visit", "href": "/tea/visit" }
+  ]
+}

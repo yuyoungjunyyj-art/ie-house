@@ -1,0 +1,38 @@
+---
+import Base from './Base.astro';
+import Shot from '../components/Shot.astro';
+import TextLink from '../components/TextLink.astro';
+import { href } from '../lib/i18n';
+import { rich } from '../lib/rich';
+
+const { locale, page, path } = Astro.props;
+const ogShot = page.sections.flatMap((section: { shots: string[] }) => section.shots)[0];
+---
+<Base locale={locale} area="tea" meta={page.meta} path={path} ogShot={ogShot}>
+  <header class="page-head" data-reveal>
+    <p class="eyebrow"><span class="jp" lang="ja">{page.mark}</span> {page.label}</p>
+    <h1>{page.title}</h1>
+    <p class="page-head__intro">{page.intro}</p>
+  </header>
+
+  {page.sections.map((section: { id: string; heading: string; body: string[]; shots: string[] }) => (
+    <section class="section" id={section.id} data-reveal>
+      <h2>{section.heading}</h2>
+      <div class="section__body">
+        {section.body.map((paragraph) => <p set:html={rich(paragraph)} />)}
+        <slot name={section.id} />
+        {section.shots.length > 0 && (
+          <div class:list={['shots', { 'shots--pair': section.shots.length === 2 }]}>
+            {section.shots.map((id) => <Shot id={id} sizes="(min-width: 900px) 60vw, 100vw" />)}
+          </div>
+        )}
+      </div>
+    </section>
+  ))}
+
+  {page.links.length > 0 && (
+    <nav class="page-links" aria-label="Continue">
+      {page.links.map((link: { label: string; href: string }) => <TextLink href={href(locale, link.href)} label={link.label} />)}
+    </nav>
+  )}
+</Base>

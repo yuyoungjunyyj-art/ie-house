@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Ie · A traditional Kyoto house in Fushimi",
+    "description": "Ie is a traditional Kyoto house in Fushimi, given a new chapter. Come for tea, or come to stay."
+  },
+  "heading": "Ie",
+  "lines": [
+    "In Japanese, Ie (家) means house, and it means home.",
+    "Ie is a traditional Kyoto house in Fushimi, given a new chapter. Come for tea, or come to stay."
+  ],
+  "doors": [
+    {
+      "title": "Ie Stay",
+      "shot": "door-house",
+      "japanese": "泊まる家",
+      "line": "Sleep in the house after the visitors have gone. Mornings by the well and the garden.",
+      "link": "Enter",
+      "href": "/stay"
+    },
+    {
+      "title": "House of Tea",
+      "shot": "door-tea",
+      "japanese": "茶の家",
+      "line": "Tea prepared, food shared, a garden that turns with the seasons. Open to visitors.",
+      "link": "Enter",
+      "href": "/tea"
+    }
+  ]
+}

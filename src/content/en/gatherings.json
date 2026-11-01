@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Gatherings · Ie Fushimi",
+    "description": "The house was built for people. Small gatherings through the year, and private use, in Fushimi, Kyoto."
+  },
+  "mark": "集",
+  "label": "Gatherings",
+  "title": "Gatherings",
+  "intro": "The house was built for people. We open it for small gatherings through the year.",
+  "sections": [
+    {
+      "id": "upcoming",
+      "heading": "Upcoming",
+      "body": [],
+      "shots": []
+    },
+    {
+      "id": "private",
+      "heading": "Private use",
+      "body": [
+        "The house can be opened for your own gathering: a tea, a meal, a small occasion.",
+        "Tell us the date, how many you are and what you have in mind.",
+        "[Capacity and pricing approach to confirm.]"
+      ],
+      "shots": ["gatherings-room"]
+    }
+  ],
+  "empty": "No dates are set at the moment. New gatherings will be listed here.",
+  "enquire": "Enquire",
+  "links": [
+    { "label": "Seasons", "href": "/tea/seasons" },
+    { "label": "Plan Your Visit", "href": "/tea/visit" }
+  ]
+}

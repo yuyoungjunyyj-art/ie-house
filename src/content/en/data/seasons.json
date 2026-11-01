@@ -1,0 +1,28 @@
+{
+  "items": [
+    { "id": "shokan", "kanji": "小寒", "romaji": "Shōkan", "name": "Lesser cold", "month": 1, "day": 5, "note": "" },
+    { "id": "daikan", "kanji": "大寒", "romaji": "Daikan", "name": "Greater cold", "month": 1, "day": 20, "note": "" },
+    { "id": "risshun", "kanji": "立春", "romaji": "Risshun", "name": "Beginning of spring", "month": 2, "day": 4, "note": "" },
+    { "id": "usui", "kanji": "雨水", "romaji": "Usui", "name": "Rain water", "month": 2, "day": 19, "note": "" },
+    { "id": "keichitsu", "kanji": "啓蟄", "romaji": "Keichitsu", "name": "Insects awaken", "month": 3, "day": 6, "note": "" },
+    { "id": "shunbun", "kanji": "春分", "romaji": "Shunbun", "name": "Spring equinox", "month": 3, "day": 21, "note": "" },
+    { "id": "seimei", "kanji": "清明", "romaji": "Seimei", "name": "Clear and bright", "month": 4, "day": 5, "note": "" },
+    { "id": "kokuu", "kanji": "穀雨", "romaji": "Kokuu", "name": "Grain rain", "month": 4, "day": 20, "note": "" },
+    { "id": "rikka", "kanji": "立夏", "romaji": "Rikka", "name": "Beginning of summer", "month": 5, "day": 6, "note": "" },
+    { "id": "shoman", "kanji": "小満", "romaji": "Shōman", "name": "Lesser fullness", "month": 5, "day": 21, "note": "" },
+    { "id": "boshu", "kanji": "芒種", "romaji": "Bōshu", "name": "Grain in ear", "month": 6, "day": 6, "note": "" },
+    { "id": "geshi", "kanji": "夏至", "romaji": "Geshi", "name": "Summer solstice", "month": 6, "day": 21, "note": "" },
+    { "id": "shosho", "kanji": "小暑", "romaji": "Shōsho", "name": "Lesser heat", "month": 7, "day": 7, "note": "" },
+    { "id": "taisho", "kanji": "大暑", "romaji": "Taisho", "name": "Greater heat", "month": 7, "day": 23, "note": "" },
+    { "id": "risshu", "kanji": "立秋", "romaji": "Risshū", "name": "Beginning of autumn", "month": 8, "day": 8, "note": "" },
+    { "id": "shosho-end", "kanji": "処暑", "romaji": "Shosho", "name": "End of heat", "month": 8, "day": 23, "note": "" },
+    { "id": "hakuro", "kanji": "白露", "romaji": "Hakuro", "name": "White dew", "month": 9, "day": 8, "note": "" },
+    { "id": "shubun", "kanji": "秋分", "romaji": "Shūbun", "name": "Autumn equinox", "month": 9, "day": 23, "note": "" },
+    { "id": "kanro", "kanji": "寒露", "romaji": "Kanro", "name": "Cold dew", "month": 10, "day": 8, "note": "" },
+    { "id": "soko", "kanji": "霜降", "romaji": "Sōkō", "name": "Frost descends", "month": 10, "day": 23, "note": "" },
+    { "id": "ritto", "kanji": "立冬", "romaji": "Rittō", "name": "Beginning of winter", "month": 11, "day": 7, "note": "" },
+    { "id": "shosetsu", "kanji": "小雪", "romaji": "Shōsetsu", "name": "Lesser snow", "month": 11, "day": 22, "note": "" },
+    { "id": "taisetsu", "kanji": "大雪", "romaji": "Taisetsu", "name": "Greater snow", "month": 12, "day": 7, "note": "" },
+    { "id": "toji", "kanji": "冬至", "romaji": "Tōji", "name": "Winter solstice", "month": 12, "day": 22, "note": "" }
+  ]
+}

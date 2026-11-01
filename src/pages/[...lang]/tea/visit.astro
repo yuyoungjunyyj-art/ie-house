@@ -1,0 +1,47 @@
+---
+import InnerPage from '../../../layouts/InnerPage.astro';
+import EnquiryForm from '../../../components/EnquiryForm.astro';
+import TextLink from '../../../components/TextLink.astro';
+import { content, href, localePaths } from '../../../lib/i18n';
+import { rich } from '../../../lib/rich';
+import settings from '../../../content/settings.json';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const { visit } = content(locale);
+const reserveHref = settings.bookingUrl || href(locale, '/tea/visit#enquire');
+const facts = [
+  { label: visit.finding.address, value: settings.address },
+  { label: visit.finding.access, value: settings.access },
+  { label: visit.finding.hours, value: settings.hours },
+  { label: visit.finding.closed, value: settings.closed },
+  { label: visit.finding.contact, value: `${settings.email} · ${settings.phone}` },
+];
+---
+<InnerPage locale={locale} page={visit} path="/tea/visit">
+  <div slot="finding" class="section__body">
+    <dl class="facts">
+      {facts.map((fact) => (
+        <div>
+          <dt>{fact.label}</dt>
+          <dd set:html={rich(fact.value)} />
+        </div>
+      ))}
+    </dl>
+    {settings.mapUrl
+      ? <div><TextLink href={settings.mapUrl} label={visit.finding.map} /></div>
+      : <p set:html={rich(visit.finding.mapPending)} />}
+  </div>
+  <EnquiryForm slot="enquire" locale={locale} />
+  <div class="faq" slot="faq">
+    {visit.faq.map((item: any) => (
+      <div class="faq__item">
+        <h3>{item.question}</h3>
+        <div class="faq__answer">
+          <p set:html={rich(item.answer)} />
+          {item.link && <TextLink href={reserveHref} label={item.link} />}
+        </div>
+      </div>
+    ))}
+  </div>
+</InnerPage>

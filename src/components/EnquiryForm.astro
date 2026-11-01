@@ -1,0 +1,45 @@
+---
+import { content } from '../lib/i18n';
+
+const { locale } = Astro.props;
+const { form } = content(locale).site;
+const endpoint = import.meta.env.PUBLIC_FORM_ENDPOINT;
+---
+<form class="enquiry" method="post" action={endpoint} data-async-form data-success={form.success} data-error={form.error} data-unconnected={form.unconnected}>
+  <label class="field">
+    <span>{form.name}</span>
+    <input type="text" name="name" required autocomplete="name" />
+  </label>
+  <label class="field">
+    <span>{form.email}</span>
+    <input type="email" name="email" required autocomplete="email" />
+  </label>
+  <div class="enquiry__pair">
+    <label class="field">
+      <span>{form.date}</span>
+      <input type="date" name="date" />
+    </label>
+    <label class="field">
+      <span>{form.guests}</span>
+      <select name="guests">
+        {form.guestOptions.map((option: string) => <option value={option}>{option}</option>)}
+      </select>
+    </label>
+  </div>
+  <fieldset class="chips">
+    <legend>{form.interest}</legend>
+    {form.interests.map((item: { value: string; label: string }) => (
+      <label class="chip">
+        <input type="checkbox" name="interest" value={item.value} />
+        <span>{item.label}</span>
+      </label>
+    ))}
+  </fieldset>
+  <label class="field">
+    <span>{form.message}</span>
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+  <input class="trap" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+  <button class="link link--button" type="submit">{form.submit}</button>
+  <p class="form-status" role="status" data-form-status></p>
+</form>

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "The House · Ie Fushimi",
+    "description": "A traditional Kyoto house of timber, plaster, well water and a garden, on the way to Fushimi Inari."
+  },
+  "mark": "家",
+  "label": "The House",
+  "title": "The House",
+  "intro": "Timber, plaster, well water and a garden. The house was here long before us.",
+  "sections": [
+    {
+      "id": "street",
+      "heading": "The street",
+      "body": [
+        "The house stands on an old street leading towards Fushimi Inari. Visitors pass on their way to the shrine.",
+        "Its lattice front faces the street. From inside, the walk outside becomes sound and shadow."
+      ],
+      "shots": ["house-facade", "house-street"]
+    },
+    {
+      "id": "timber",
+      "heading": "Timber",
+      "body": [
+        "The timber carries the marks of those who built it. Look along a beam and you can still see where the tools passed.",
+        "The walls are plaster and earth. They take the light slowly through the day."
+      ],
+      "shots": ["house-beam", "house-wall"]
+    },
+    {
+      "id": "wells",
+      "heading": "The wells",
+      "body": [
+        "Water rises from wells beneath the house. Tea here begins with it."
+      ],
+      "shots": ["house-well"]
+    },
+    {
+      "id": "garden",
+      "heading": "The garden",
+      "body": [
+        "Beyond the rooms, a garden changes quietly with the seasons.",
+        "Nothing in it stays the same for long. Sit with it a while and you will see."
+      ],
+      "shots": ["house-garden", "house-moss"]
+    }
+  ],
+  "links": [
+    { "label": "Tea", "href": "/tea/tea" },
+    { "label": "Plan Your Visit", "href": "/tea/visit" }
+  ]
+}

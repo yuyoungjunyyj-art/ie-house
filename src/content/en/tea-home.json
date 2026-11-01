@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Ie Fushimi · A House of Tea in Kyoto",
+    "description": "An old house on the street towards Fushimi Inari. Tea is prepared here. Food is made and shared."
+  },
+  "hero": {
+    "title": "IE FUSHIMI",
+    "kicker": "A House of Tea · Kyoto",
+    "line": "An old house. A new chapter.",
+    "shot": "tea-home-hero"
+  },
+  "screens": [
+    {
+      "id": "street",
+      "lines": ["On an old street leading towards Fushimi Inari stands a traditional Kyoto house."],
+      "shots": ["tea-home-street"]
+    },
+    {
+      "id": "house",
+      "lines": [
+        "Its timber carries the marks of those who built it.",
+        "Water rises from wells beneath it.",
+        "Beyond its rooms, a garden changes quietly with the seasons."
+      ],
+      "shots": ["tea-home-timber", "tea-home-well", "tea-home-garden"]
+    },
+    {
+      "id": "today",
+      "lines": [
+        "Today, the house has another life.",
+        "Tea is prepared here.",
+        "Food is made and shared.",
+        "People gather, discover and sometimes stay longer than they intended."
+      ],
+      "shots": ["tea-home-hands"]
+    },
+    {
+      "id": "close",
+      "lines": ["We call it IE.", "A House of Tea in Fushimi, Kyoto."],
+      "shots": []
+    }
+  ],
+  "buttons": [
+    { "label": "Discover the House", "href": "/tea/house" },
+    { "label": "Plan Your Visit", "href": "/tea/visit" }
+  ],
+  "cards": [
+    { "mark": "茶", "title": "Tea", "line": "What we prepare, and how it is served.", "href": "/tea/tea" },
+    { "mark": "食", "title": "Food", "line": "Made in the kitchen, shared at the table.", "href": "/tea/food" },
+    { "mark": "泊", "title": "Stay", "line": "Spend the night at Ie Stay.", "href": "/stay" }
+  ]
+}

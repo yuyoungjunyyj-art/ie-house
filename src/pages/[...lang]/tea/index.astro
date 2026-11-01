@@ -1,0 +1,52 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Lines from '../../../components/Lines.astro';
+import Shot from '../../../components/Shot.astro';
+import TextLink from '../../../components/TextLink.astro';
+import SeasonStrip from '../../../components/SeasonStrip.astro';
+import { content, href, localePaths } from '../../../lib/i18n';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const page = content(locale)['tea-home'];
+---
+<Base locale={locale} area="tea" meta={page.meta} path="/tea" ogShot={page.hero.shot}>
+  <section class="tea-hero" data-reveal>
+    <div>
+      <h1>{page.hero.title}</h1>
+      <p class="eyebrow tea-hero__kicker">{page.hero.kicker}</p>
+      <p class="tea-hero__line">{page.hero.line}</p>
+    </div>
+    <Shot id={page.hero.shot} eager sizes="(min-width: 900px) 35vw, 100vw" />
+  </section>
+
+  {page.screens.map((screen: any) => (
+    <section class={`screen screen--${screen.id}`}>
+      <Lines class="screen__text" lines={screen.lines} />
+      {screen.shots.length > 0 && (
+        <div class:list={['screen__shots', { 'screen__shots--three': screen.shots.length === 3 }]} data-reveal>
+          {screen.shots.map((id: string) => (
+            <Shot id={id} sizes={screen.shots.length === 3 ? '(min-width: 900px) 15vw, 33vw' : '(min-width: 900px) 55vw, 100vw'} />
+          ))}
+        </div>
+      )}
+      {screen.id === 'close' && (
+        <div class="tea-buttons" data-reveal>
+          {page.buttons.map((button: any) => <TextLink href={href(locale, button.href)} label={button.label} />)}
+        </div>
+      )}
+    </section>
+  ))}
+
+  <SeasonStrip locale={locale} />
+
+  <section class="cards" data-reveal>
+    {page.cards.map((card: any) => (
+      <a class="card" href={href(locale, card.href)}>
+        <span class="card__mark" lang="ja" aria-hidden="true">{card.mark}</span>
+        <h2 class="card__title">{card.title}</h2>
+        <p class="card__line">{card.line}</p>
+      </a>
+    ))}
+  </section>
+</Base>

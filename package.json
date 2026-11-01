@@ -1,0 +1,22 @@
+{
+  "name": "ie-house",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "copy": "node scripts/export-copy.mjs",
+    "share": "astro build && node scripts/build-share.mjs",
+    "share:single": "astro build && node scripts/build-single.mjs",
+    "cms": "decap-server"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.4",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "decap-server": "^3.11.6"
+  }
+}

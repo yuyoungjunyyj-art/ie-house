@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Plan Your Visit · Ie Fushimi",
+    "description": "How to find the house on the way to Fushimi Inari, how to reserve, and what to expect when you come."
+  },
+  "mark": "訪",
+  "label": "Plan Your Visit",
+  "title": "Plan Your Visit",
+  "intro": "The house is on the way to Fushimi Inari. Come before the crowds, or after.",
+  "sections": [
+    { "id": "finding", "heading": "Finding us", "body": [], "shots": ["visit-cafe"] },
+    {
+      "id": "enquire",
+      "heading": "Reserve or enquire",
+      "body": ["Tell us when you would like to come and how many you are. We will reply by email."],
+      "shots": []
+    },
+    { "id": "faq", "heading": "Questions", "body": [], "shots": [] }
+  ],
+  "finding": {
+    "address": "Address",
+    "access": "Access",
+    "hours": "Hours",
+    "closed": "Closed",
+    "contact": "Contact",
+    "map": "Open the map",
+    "mapPending": "[Map link to confirm]"
+  },
+  "faq": [
+    {
+      "question": "Do I need to book?",
+      "answer": "Please reserve through this website.",
+      "link": "Reserve"
+    },
+    {
+      "question": "Do I need to know tea ceremony?",
+      "answer": "No. Tea is prepared in front of you and we will explain as much or as little as you like."
+    },
+    {
+      "question": "Is the house accessible?",
+      "answer": "This is an old house. The first floor and the garden are accessible, but the second floor and the basement can only be reached by stairs. If you have a question about getting around, write to us and we will answer plainly."
+    },
+    {
+      "question": "Can children visit?",
+      "answer": "Of course. Please keep a close eye on your children so that they stay safe."
+    },
+    {
+      "question": "Which languages do you speak?",
+      "answer": "We can assist you in English, Japanese, Chinese, and Korean."
+    }
+  ],
+  "links": []
+}

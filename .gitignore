@@ -1,0 +1,9 @@
+node_modules/
+dist/
+share/
+.astro/
+.env
+share-single
+Photo/
+.claude/settings.local.json
+.claude/worktrees/

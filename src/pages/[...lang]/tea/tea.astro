@@ -1,0 +1,23 @@
+---
+import InnerPage from '../../../layouts/InnerPage.astro';
+import TextLink from '../../../components/TextLink.astro';
+import { content, href, localePaths } from '../../../lib/i18n';
+import { rich } from '../../../lib/rich';
+import settings from '../../../content/settings.json';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const { tea, data } = content(locale);
+const reserveHref = settings.bookingUrl || href(locale, '/tea/visit?interest=tea#enquire');
+---
+<InnerPage locale={locale} page={tea} path="/tea/tea">
+  <ul class="rows" slot="prepare">
+    {data.menu.items.map((item: any) => (
+      <li class="row">
+        <p class="row__name">{item.name}<span class="jp" lang="ja">{item.japanese}</span></p>
+        <p class="row__text" set:html={rich(item.description)} />
+      </li>
+    ))}
+  </ul>
+  <div slot="sittings"><TextLink href={reserveHref} label={tea.reserve} /></div>
+</InnerPage>

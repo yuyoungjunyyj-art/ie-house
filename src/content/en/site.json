@@ -1,0 +1,73 @@
+{
+  "wordmark": {
+    "brand": "ie.house",
+    "tea": "House of Tea"
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "brand": [
+      { "label": "Ie Stay", "href": "/stay" },
+      { "label": "House of Tea", "href": "/tea" }
+    ],
+    "tea": [
+      { "label": "The House", "href": "/tea/house" },
+      { "label": "Tea", "href": "/tea/tea" },
+      { "label": "Food", "href": "/tea/food" },
+      { "label": "Gatherings", "href": "/tea/gatherings" },
+      { "label": "Seasons", "href": "/tea/seasons" },
+      { "label": "Plan Your Visit", "href": "/tea/visit" }
+    ]
+  },
+  "footer": {
+    "line": "Ie · A house of tea and a place to stay in Fushimi, Kyoto.",
+    "letters": {
+      "heading": "Seasonal letters",
+      "body": "A short letter when the season turns.",
+      "emailLabel": "Email",
+      "button": "Sign up",
+      "success": "Thank you. The next letter will find you.",
+      "error": "That did not go through. Please try again.",
+      "unconnected": "Seasonal letters are not open yet. Please check back soon."
+    },
+    "houseHeading": "House of Tea",
+    "visitHeading": "Visit",
+    "followHeading": "Follow",
+    "copyright": "© Ie · ie.house",
+    "languageLabel": "Language",
+    "languageSoon": "Japanese version to follow"
+  },
+  "season": {
+    "label": "Today at the house",
+    "next": "Next",
+    "from": "from",
+    "link": "The twenty-four seasons"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "date": "Date",
+    "guests": "Number of guests",
+    "guestOptions": ["1", "2", "3", "4", "5–8", "More than 8"],
+    "interest": "I am interested in",
+    "interests": [
+      { "value": "tea", "label": "Tea" },
+      { "value": "food", "label": "Food" },
+      { "value": "stay", "label": "Stay" },
+      { "value": "gathering", "label": "A gathering" }
+    ],
+    "message": "Message",
+    "submit": "Send",
+    "success": "Thank you. We will reply by email.",
+    "error": "That did not go through. Please try again, or write to us directly.",
+    "unconnected": "This form is not connected yet. Your message has not been sent."
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page not found · Ie",
+      "description": "This page is not part of the house."
+    },
+    "title": "This door does not open.",
+    "body": "The page you were looking for is not here.",
+    "link": "Return to ie.house"
+  }
+}

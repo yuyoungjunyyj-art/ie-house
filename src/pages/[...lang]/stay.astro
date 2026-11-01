@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import Shot from '../../components/Shot.astro';
+import TextLink from '../../components/TextLink.astro';
+import { content, href, localePaths } from '../../lib/i18n';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const { stay } = content(locale);
+---
+<Base locale={locale} area="stay" meta={stay.meta} path="/stay" ogShot={stay.shot}>
+  <section class="stay" data-reveal>
+    <div class="stay__text">
+      <p class="eyebrow">{stay.label}</p>
+      <h1>{stay.title}</h1>
+      <p class="stay__line">{stay.line}</p>
+      <div class="stay__buttons">
+        {stay.buttons.map((button: any) => <TextLink href={href(locale, button.href)} label={button.label} />)}
+      </div>
+    </div>
+    <Shot id={stay.shot} eager sizes="(min-width: 900px) 55vw, 100vw" />
+  </section>
+</Base>

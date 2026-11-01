@@ -1,0 +1,28 @@
+---
+import InnerPage from '../../../layouts/InnerPage.astro';
+import TextLink from '../../../components/TextLink.astro';
+import { content, href, localePaths } from '../../../lib/i18n';
+
+export const getStaticPaths = localePaths;
+const { locale } = Astro.props;
+const { gatherings, data } = content(locale);
+const events = data.events.items;
+---
+<InnerPage locale={locale} page={gatherings} path="/tea/gatherings">
+  <div slot="upcoming">
+    {events.length === 0 ? (
+      <p>{gatherings.empty}</p>
+    ) : (
+      <ul class="rows">
+        {events.map((event: any) => (
+          <li class="row">
+            <p class="row__name">{event.title}</p>
+            <p class="row__aside">{event.date}</p>
+            <p class="row__text">{event.description}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+  <div slot="private"><TextLink href={href(locale, '/tea/visit?interest=gathering#enquire')} label={gatherings.enquire} /></div>
+</InnerPage>

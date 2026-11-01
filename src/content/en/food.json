@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Food · Ie Fushimi",
+    "description": "Made in the kitchen of the house, and shared at one table. Seasonal food in Fushimi, Kyoto."
+  },
+  "mark": "食",
+  "label": "Food",
+  "title": "Food",
+  "intro": "Made in the kitchen of the house, and shared at one table.",
+  "sections": [
+    {
+      "id": "kitchen",
+      "heading": "The kitchen",
+      "body": ["What we cook follows the season, and it is eaten a few steps from where it was made.", "[Food style to confirm.]"],
+      "shots": ["food-oven"]
+    },
+    {
+      "id": "season",
+      "heading": "This season",
+      "body": ["The list changes as the season does."],
+      "shots": ["food-sweet", "food-wagashi"]
+    },
+    {
+      "id": "dietary",
+      "heading": "Dietary note",
+      "body": ["Please tell us about allergies and dietary needs when you enquire.", "[Dietary policy to confirm.]"],
+      "shots": []
+    }
+  ],
+  "links": [
+    { "label": "Tea", "href": "/tea/tea" },
+    { "label": "Plan Your Visit", "href": "/tea/visit" }
+  ]
+}

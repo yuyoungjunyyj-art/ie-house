@@ -1,0 +1,22 @@
+{
+  "address": "[Street address to confirm]",
+  "access": "[Walking time from JR Inari and Keihan Fushimi-Inari stations to confirm]",
+  "hours": "[Opening days and hours to confirm]",
+  "closed": "[Closed days to confirm]",
+  "email": "[Contact email to confirm]",
+  "phone": "[Phone to confirm]",
+  "mapUrl": "",
+  "social": [
+    {
+      "name": "Ie Stay",
+      "facebookUrl": "https://www.facebook.com/profile.php?id=61595825039967",
+      "instagramUrl": "https://www.instagram.com/iehousejapan"
+    },
+    {
+      "name": "House of Tea",
+      "facebookUrl": "https://www.facebook.com/profile.php?id=61594855632378",
+      "instagramUrl": "https://www.instagram.com/iehouseoftea/"
+    }
+  ],
+  "bookingUrl": ""
+}

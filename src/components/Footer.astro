@@ -1,0 +1,73 @@
+---
+import Mark from './Mark.astro';
+import { content, href, locales } from '../lib/i18n';
+import { rich } from '../lib/rich';
+import settings from '../content/settings.json';
+
+const { locale } = Astro.props;
+const { site } = content(locale);
+const { letters } = site.footer;
+const housePages = site.nav.tea.filter((link: { href: string }) => link.href !== '/tea/visit');
+const visitPage = site.nav.tea.find((link: { href: string }) => link.href === '/tea/visit');
+const stayPage = site.nav.brand.find((link: { href: string }) => link.href === '/stay');
+const newsletterEndpoint = import.meta.env.PUBLIC_NEWSLETTER_ENDPOINT;
+const japaneseLive = (locales as readonly string[]).includes('ja');
+---
+<footer class="footer">
+  <div class="footer__intro">
+    <Mark class="footer__mark" />
+    <p>{site.footer.line}</p>
+  </div>
+
+  <form class="letters" method="post" action={newsletterEndpoint} data-async-form data-success={letters.success} data-error={letters.error} data-unconnected={letters.unconnected}>
+    <h2 class="eyebrow">{letters.heading}</h2>
+    <p>{letters.body}</p>
+    <label class="field">
+      <span>{letters.emailLabel}</span>
+      <input type="email" name="email" required autocomplete="email" />
+    </label>
+    <input class="trap" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <button class="link link--button" type="submit">{letters.button}</button>
+    <p class="form-status" role="status" data-form-status></p>
+  </form>
+
+  <div class="footer__columns">
+    <div>
+      <h2 class="eyebrow">{site.footer.houseHeading}</h2>
+      <ul>
+        {housePages.map((link: { label: string; href: string }) => <li><a href={href(locale, link.href)}>{link.label}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h2 class="eyebrow">{site.footer.visitHeading}</h2>
+      <ul>
+        <li><a href={href(locale, visitPage.href)}>{visitPage.label}</a></li>
+        <li><a href={href(locale, stayPage.href)}>{stayPage.label}</a></li>
+        <li set:html={rich(settings.address)} />
+      </ul>
+    </div>
+    <div>
+      <h2 class="eyebrow">{site.footer.followHeading}</h2>
+      <ul>
+        {settings.social.map((account) => (
+          <li class="follow">
+            <span class="follow__name">{account.name}</span>
+            <a href={account.facebookUrl} aria-label={`${account.name} on Facebook`}>Facebook</a>
+            <a href={account.instagramUrl} aria-label={`${account.name} on Instagram`}>Instagram</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__base">
+    <p>{site.footer.copyright}</p>
+    <p class="language" aria-label={site.footer.languageLabel}>
+      <a href={href('en', '/')} aria-current={locale === 'en' ? 'true' : undefined} lang="en">EN</a>
+      <span aria-hidden="true">/</span>
+      {japaneseLive
+        ? <a href={href('ja', '/')} aria-current={locale === 'ja' ? 'true' : undefined} lang="ja">日本語</a>
+        : <span class="language__soon" lang="ja" title={site.footer.languageSoon}>日本語<span class="sr-only" lang="en"> ({site.footer.languageSoon})</span></span>}
+    </p>
+  </div>
+</footer>
