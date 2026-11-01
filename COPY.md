@@ -9,8 +9,7 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
   - **description:** Ie is a traditional Kyoto house in Fushimi, given a new chapter. Come for tea, or come to stay.
 - **heading:** Ie
 - **lines**
-  - In Japanese, Ie (家) means house, and it means home.
-  - Ie is a traditional Kyoto house in Fushimi, given a new chapter. Come for tea, or come to stay.
+  - IE (家) means home — a place of belonging, comfort, and everyday life.
 - **doors**
   - **title:** Ie Stay
   - **japanese:** 泊まる家
