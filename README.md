@@ -26,7 +26,7 @@ Run `npm run dev` and `npm run cms` together, then open `http://localhost:4321/a
 
 ## Automatic upload
 
-When Claude Code finishes a turn in this project, `scripts/auto-push.mjs` commits any changes and pushes them to GitHub (set up in `.claude/settings.json`). It holds back the upload if a file looks like a secret or is over 50 MB. The original `Photo/` folder is never uploaded.
+When Claude Code finishes a turn in this project, `scripts/auto-push.mjs` commits any changes and pushes them to GitHub (set up in `.claude/settings.json`). It holds back the upload if a file looks like a secret or is over 50 MB. The original `Photo/` folder is never uploaded. This repository is public, so anything else saved in this folder is published unless `.gitignore` excludes it.
 
 ## Connecting forms
 
