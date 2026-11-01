@@ -47,6 +47,6 @@
   "cards": [
     { "mark": "茶", "title": "Tea", "line": "What we prepare, and how it is served.", "href": "/tea/tea" },
     { "mark": "食", "title": "Food", "line": "Made in the kitchen, shared at the table.", "href": "/tea/food" },
-    { "mark": "泊", "title": "Stay", "line": "Spend the night at Ie Stay.", "href": "/stay" }
+    { "mark": "泊", "title": "Stay", "line": "Spend the night at Ie Stays.", "href": "/stay" }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "items": [
     { "id": "main-hero", "shot": "The house from the street", "ratio": "16/9", "src": "/src/assets/photos/main-hero-poster.jpg", "video": "/videos/main-hero.mp4", "alt": "The dark timber front of the house, with a dotted noren curtain moving in the breeze as a scooter passes." },
-    { "id": "door-house", "shot": "Ie Stay background", "ratio": "3/2", "src": "/src/assets/photos/room-first-light.jpg", "video": "", "alt": "" },
+    { "id": "door-house", "shot": "Ie Stays background", "ratio": "3/2", "src": "/src/assets/photos/room-first-light.jpg", "video": "", "alt": "" },
     { "id": "door-tea", "shot": "House of Tea background", "ratio": "3/2", "src": "/src/assets/photos/sand-hearth.jpg", "video": "", "alt": "" },
     { "id": "tea-home-hero", "shot": "Still water in a stone basin", "ratio": "3/4", "src": "/src/assets/photos/hero-opening-poster.jpg", "video": "/videos/hero-opening.mp4", "alt": "Still water in a stone basin, reflecting leaves and sky." },
     { "id": "tea-home-street", "shot": "The house from the street", "ratio": "4/3", "src": "/src/assets/photos/main-gate.jpg", "video": "", "alt": "The front of the house from the street: a tiled roof, timber lattice and a lit room behind glass." },

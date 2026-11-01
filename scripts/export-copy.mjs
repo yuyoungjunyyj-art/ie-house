@@ -17,7 +17,7 @@ const pages = [
   ['Twenty-four seasons', 'en/data/seasons.json'],
   ['Journal', 'en/data/journal.json'],
   ['Plan Your Visit (/tea/visit)', 'en/visit.json'],
-  ['Ie Stay holding page (/stay)', 'en/stay.json'],
+  ['Ie Stays holding page (/stay)', 'en/stay.json'],
   ['Header, footer, forms, 404', 'en/site.json'],
   ['House details', 'settings.json'],
 ];

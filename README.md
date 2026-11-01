@@ -1,6 +1,6 @@
 # ie.house
 
-Brand home, Ie Fushimi House of Tea, and the Ie Stay holding page. Built with Astro.
+Brand home, Ie Fushimi House of Tea, and the Ie Stays holding page. Built with Astro.
 
 ```bash
 npm install

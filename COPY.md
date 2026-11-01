@@ -11,7 +11,7 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
 - **lines**
   - IE (家) means home — a place of belonging, comfort, and everyday life.
 - **doors**
-  - **title:** Ie Stay
+  - **title:** Ie Stays
   - **japanese:** 泊まる家
   - **line:** Sleep in the house after the visitors have gone. Mornings by the well and the garden.
   - **link:** Enter
@@ -56,7 +56,7 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
   - **line:** Made in the kitchen, shared at the table.
   - **mark:** 泊
   - **title:** Stay
-  - **line:** Spend the night at Ie Stay.
+  - **line:** Spend the night at Ie Stays.
 
 ## The House (/tea/house)
 
@@ -322,14 +322,14 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
   - **question:** Which languages do you speak?
   - **answer:** We can assist you in English, Japanese, Chinese, and Korean.
 
-## Ie Stay holding page (/stay)
+## Ie Stays holding page (/stay)
 
 - **meta**
-  - **title:** Ie Stay · A place to stay in Fushimi, Kyoto
-  - **description:** Stay in the house in Fushimi. Our Ie Stay pages are being prepared. Enquire about a stay.
-- **label:** Ie Stay · 泊まる家
-- **title:** Ie Stay
-- **line:** Stay in the house in Fushimi. Our Ie Stay pages are being prepared.
+  - **title:** Ie Stays · A place to stay in Fushimi, Kyoto
+  - **description:** Stay in the house in Fushimi. Our Ie Stays pages are being prepared. Enquire about a stay.
+- **label:** Ie Stays · 泊まる家
+- **title:** Ie Stays
+- **line:** Stay in the house in Fushimi. Our Ie Stays pages are being prepared.
 - **buttons**
   - **label:** Enquire about a stay
   - **label:** Visit the House of Tea
@@ -342,7 +342,7 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
 - **nav**
   - **skip:** Skip to content
   - **brand**
-    - **label:** Ie Stay
+    - **label:** Ie Stays
     - **label:** House of Tea
   - **tea**
     - **label:** The House
@@ -412,7 +412,7 @@ Generated from `src/content` by `npm run copy`. Edit those files, not this one.
 - **email:** [Contact email to confirm]
 - **phone:** [Phone to confirm]
 - **social**
-  - **name:** Ie Stay
+  - **name:** Ie Stays
   - **facebookUrl:** https://www.facebook.com/profile.php?id=61595825039967
   - **instagramUrl:** https://www.instagram.com/iehousejapan
   - **name:** House of Tea
