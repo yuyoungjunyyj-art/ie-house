@@ -7,3 +7,5 @@ share-single
 Photo/
 .claude/settings.local.json
 .claude/worktrees/
+# Documents saved in the project folder stay private.
+/*.pdf
