@@ -111,18 +111,31 @@ function setUpForms() {
   });
 }
 
-// Muted loops play only while on screen. With reduced motion or data saver they stay on their poster.
+// Muted loops play only while on screen. With data saver they stay on their poster.
+// They play with reduced motion too: Windows turns it on when animation effects are off, which left the hero still on many PCs.
+// Where the browser blocks autoplay, a visible loop starts on the visitor's first click, tap or key press.
 function setUpVideos() {
-  const stayStill =
-    matchMedia('(prefers-reduced-motion: reduce)').matches ||
-    Boolean((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData);
-  if (stayStill) return;
+  if ((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData) return;
+
+  const blocked = new Set<HTMLVideoElement>();
+  const play = (video: HTMLVideoElement) => {
+    video.muted = true;
+    video.play().then(
+      () => blocked.delete(video),
+      () => blocked.add(video),
+    );
+  };
+  const retry = () => blocked.forEach(play);
+  ['pointerdown', 'keydown', 'touchend'].forEach((type) => addEventListener(type, retry, { passive: true }));
 
   document.querySelectorAll<HTMLVideoElement>('[data-video] video').forEach((video) => {
     new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) video.play().catch(() => {});
-        else video.pause();
+        if (entry.isIntersecting) play(video);
+        else {
+          blocked.delete(video);
+          video.pause();
+        }
       },
       { threshold: 0.2 },
     ).observe(video);
